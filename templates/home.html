@@ -1,0 +1,550 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Options
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('about')}}">About</a>
+  <!--     <a href="projects.html">Projects</a> -->
+
+    </div>
+  </div> 
+</div>
+</head>
+<br>
+<div class="insta-main">
+  <div class="insta-wrapper">
+    <div class="insta-banner">
+      <canvas width="320" height="200" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ');"></canvas>
+    </div>
+    <div class="insta-details">
+      <div class="insta-dp">
+        <canvas width="150" height="150" style="background-image: url('https://images.unsplash.com/photo-1599223023494-05cb89dc40fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=381&q=80');"></canvas>
+
+      </div>
+      <div class="insta-name">
+        <h2>DHEERAJ KUMAR K<span>Machine Learning Practitioner</span></h2>
+      </div>
+      <div class="insta-followers-wrap">
+        <div class="insta-follow">
+          <h2>15<span>Projects</span></h2>
+        </div>
+        <div class="insta-follow">
+          <h2>8<span>Articles</span></h2>
+        </div>
+      </div>
+      <div class="insta-git">
+        <a href="https://github.com/DheerajKumar97"><b>GITHUB</b></a>
+      </div>
+      <div class="insta-button">
+        <a href="https://www.linkedin.com/in/dheerajkumar1997/">HIRE ME</a>
+      </div>
+      <div class="insta-bio">
+        <p>B Tech Computer Science Engineer || AI Enthusiast || Data Science Aspirant || Pythoneer || ML & DL Practitioner || Quick Learner || HTML & CSS || SQL Practitioner ||Actively Looking For Job in Data Science</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<style>
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #000000;
+  margin: 0;
+  background: url('cover.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700"),
+  a,
+  a:hover,
+  a:visited,
+  a:focus,
+  textarea {
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+.insta-main {
+  display: block;
+  padding: 50px 0;
+  position: relative;
+}
+
+.insta-wrapper {
+  background: #fff;
+  max-width: 320px;
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5);
+  font-size: 0;
+}
+
+.insta-banner canvas {
+  display: block;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 40px 40px 0 0;
+}
+
+.insta-dp {
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  position: absolute;
+  top: -68px;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+.insta-dp canvas {
+  display: block;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.insta-name {
+  display: block;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+      margin-top: 20px;
+}
+
+.insta-name h2 {
+      font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    color: #2d303a;
+    margin: 0;
+}
+
+.insta-name h2 span {
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.insta-followers-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+  position: relative;
+}
+
+.insta-follow {
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+}
+
+.insta-follow h2 {
+  color: #3372b5;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.insta-follow h2 span {
+  color: #666;
+  font-size: 13px;
+  display: block;
+  margin-top: 5px;
+  font-weight: 300;
+}
+.insta-git {
+  display: block;
+  z-index: 5;
+  position: relative;
+      margin-bottom: 15px;
+}
+.insta-git a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 140px;
+    height: 30px;
+    background: #orange;
+    color: #000;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+    transition: 0.3s all ease-in;
+  }
+.insta-button {
+  display: block;
+  z-index: 5;
+  position: relative;
+      margin-bottom: 20px;
+}
+
+.insta-button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 240px;
+    height: 50px;
+    background: #e8c411;
+    color: #000;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+    transition: 0.3s all ease-in;
+}
+
+.insta-bio p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  text-align: left;
+  display: block;
+}
+
+.insta-details {
+  display: block;
+  padding: 100px 30px 20px;
+  position: relative;
+}
+
+/* hovers */
+
+.insta-dp:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+
+
+.insta-button a:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    background: #fbfb00;
+}
+.insta-git a:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    background: #fbfb00;
+}
+</style>
+<style> 
+            .dh { 
+                width:100%; 
+                height:600px; 
+            } 
+            img{ 
+                width:100%; 
+                height:600px; 
+            } 
+</style>
+<style>
+body {
+    font-family: sans-serif;
+    background-image: url(https://expertphotography.com/wp-content/uploads/2018/10/2018-Essential-Stock-Photo-Equipment-11.jpg);
+    background-repeat: no-repeat !important;
+    /*background-size: 120% 110%!important;*/
+    background-size:cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 10%;
+ 
+</style>
+<!--
+  FOOTER PAGE
+  -->
+<style>
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;About</h6>
+            <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DHEERAJ KUMAR K <i>Currently, I am looking for a full-time role in Data Science, Machine Learning or related field.It just a small try to showcase my web development skills and my passion towards technology if you want to <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HIRE ME</i>, kindly <I> CONNECT WITH ME</i> using below available social media or <I> CONTACT ME</i> by clicking <i>HIRE ME</i> button in my profile </p>
+          </div>
+         
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <center><p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">DHEERAJ KUMAR K</a>.</center>
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+</footer>
+</html>

@@ -1,0 +1,1016 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Fira+Sans:wght@400;500;700&family=Satisfy&family=Sriracha&family=Kaushan+Script&display=swap" />
+<link rel="shortcut icon" type="image/x-icon">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<style>
+body {
+  --bg-color: #2d3636;
+  --bg-size: 20px;
+  --bg-position: calc(var(--bg-size) / 2);
+  --main-text-color: snow;
+  --primary-color: rebeccapurple;
+  --rad-color: #353d3d;
+  --rad-percent: 30%;
+  --secondary-color: darkslategrey;
+
+  color: var(--main-text-color);
+  font-family: "Fira Sans", sans-serif;
+  background-color: var(--bg-color);
+  background-image:
+    radial-gradient(var(--rad-color) var(--rad-percent), transparent 0%),
+    radial-gradient(var(--rad-color) var(--rad-percent), transparent 0%);
+  background-position: 0 0, var(--bg-position) var(--bg-position);
+  background-size: var(--bg-size) var(--bg-size);
+  /*text-align: center;*/
+}
+
+h1 {
+  font-family: "Fira Mono", monospace;
+  font-size: 5em;
+  margin: 0;
+}
+h1 span {
+  --rotation: 3deg;
+  display: inline-block;
+  margin: 0 -0.3em;
+  padding: 0.15em;
+}
+h1 span:nth-of-type(odd) {
+  background: var(--primary-color);
+  transform: rotate(calc(var(--rotation) * -1));
+}
+h1 span:nth-of-type(even) {
+  background: var(--secondary-color);
+  transform: rotate(var(--rotation));
+}
+
+h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 4em;
+  margin: 0.1em 0;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Options 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('about')}}">About</a>
+ <!--      <a href="projects.html">Projects</a> -->
+
+    </div>
+  </div> 
+</div>
+<center><h2>About</h2>
+<h1>
+  <span>D</span>
+  <span>H</span>
+  <span>E</span>
+  <span>E</span>
+  <span>R</span>
+  <span>A</span>
+  <span>J</span>
+</h1>
+<br>
+<h1>
+  <span>K</span>
+  <span>U</span>
+  <span>M</span>
+  <span>A</span>
+  <span>R</span>
+ 
+</h1></center>
+<br>
+<div class="w3-container">
+  <div class="w3-card-4" style="width:100%;">
+    <header class="w3-container w3-indigo">
+      <h1>About Me</h1>
+    </header>
+
+    <div class="w3-container">
+<br><br>
+      <font size="5"><p align ="text-justify">➢ I'm B Tech Computer Science Engineering Graduate passed out in 2019. I'm having an extensive experience in working with Technologies like Data Science, Machine Learning and additionally i have my web developement skills.<br><br>
+
+➢ Data Science practitioner with a Hands-on Experience in Python, Flask, Streamlit, SQL.<br><br>
+ ➢ Experienced in developing Data Science web applications with Machine Learning using Python. Machine Learning Techniques includes Linear Regression, Logistic Regression, Random Forest and some Advanced Machine Learning Algorithms.<br><br>
+➢ Skilled in libraries such as Sklearn, Scipy, Numpy, Pandas, Matplotlib, Plotly, Seaborn, Imblearn and Tableau for Data Visualization.<br><br>
+➢ Basic knowledge of working with SQL Database.<br><br>
+➢ Additional skills are HTML & CSS, Bootstrap.<br><br>
+
+
+Currently, I am looking for a full-time role in Data Science, Machine Learning or related field.</p> </font>
+<br>
+    </div>
+
+    <footer class="w3-container w3-blue">
+      <h5></h5>
+    </footer>
+  </div>
+</div>
+<br>
+<!--
+
+AREAS OF INTEREST FLIP CARD
+
+-->
+<div class="container" id="Technologies">
+
+  <h2><font color='white' ><b>Areas Of Interest</b></h2>
+</div >
+<br>
+<div class="box-container">
+  <div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Aritifical Inteligence</h3><br>
+          <p>Artificial Intelligence is a emerging technology which is used to fill the  gap between humans and machines.</p>
+          <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Aritifical Inteligence</h3><br>
+          <p>Artificial Intelligence is a emerging technology which is used to fill the  gap between humans and machines.</p>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Machine Learning</h3><br>
+          <p>Machine learning is more than an API call to scikit-learn. I love the math and theory as well as the implementation.</p>
+          <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Machine Learning</h3><br>
+          <p>Machine learning is more than an API call to scikit-learn. I love the math and theory as well as the implementation.</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center filter-" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Data Analytics</h3><br>
+          <p>I love telling a story. Making  beautiful and compelling presentation is one of my favorite skills.</p>
+          <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Data Analytics</h3><br>
+          <p>I love telling a story. Making  beautiful and compelling presentation is one of my favorite skills.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="box-container">
+  <div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center" style="background-image: url('https://images.unsplash.com/photo-1599289368898-936345ec60c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Deep Learning</h3><br>
+          <p>I like to spend time in appling NLP and some deep learning techniques to make sense of the motivations behind human interactions.</p>
+          <img src="" alt="" class="flip-box-img">
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: url('https://images.unsplash.com/photo-1599289368898-936345ec60c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Deep Learning</h3><br>
+          <p>I like to spend time in appling NLP and some deep learning techniques to make sense of the motivations behind human interactions.</p>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center" style="background-image: url('https://images.unsplash.com/photo-1599289187559-d8610c11dde1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Data Science</h3><br>
+          <p>As a data scientist I can bring out pattrens and insights from raw data to improve its product and services or experience.</p>
+          <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: url('https://images.unsplash.com/photo-1599289187559-d8610c11dde1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Data Science</h3><br>
+          <p>As a data scientist I can bring out pattrens and insights from raw data to improve its product and services or experience.</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center filter-" style="background-image: url('https://images.unsplash.com/photo-1599288995409-c452a9bc223f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Model Deployment</h3><br>
+          <p>I have interest on implementing machine learning models in real world production systems using REST APIs.</p>
+          <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: url('https://images.unsplash.com/photo-1599288995409-c452a9bc223f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Model Deployment</h3><br>
+          <p>I have interest on implementing machine learning models in real world production systems using REST APIs.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.box-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 35px 15px;
+  width: 100%;
+}
+
+@media screen and (min-width:1380px) {
+  .box-container {
+    flex-direction: row
+  }
+}
+
+.box-item {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  width: 415px;
+  margin-bottom: 35px;
+  max-width: 100%;
+}
+
+.flip-box {
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.flip-box-front,
+.flip-box-back {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  min-height: 475px;
+  -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 60px;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+  
+  transform: translateY(-50%) translateZ(60px) scale(.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+  top: 50%;
+}
+
+.flip-box-header {
+  font-size: 34px;
+}
+
+.flip-box p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.flip-box-img {
+  margin-top: 25px;
+}
+
+.flip-box-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+</style>
+
+
+<!--
+  FOOTER PAGE
+  -->
+<style>
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+<!--
+
+TECHNICHAL SKILLS 
+SKILL BAR
+
+-->
+<div class="container" id="Technologies">
+
+  <h2><font color='white' ><b>Technical Skills</b></h2>
+</div >
+
+
+<div class="u-center">
+        <section class="skills">
+            <div class="skill">
+                <h3 class="skill__type"><font color ="white"><b>Python</b></font></h3>
+                <div class="skill__outer-bar">
+                    <div class="skill__inner-bar skill__inner-bar--80"></div>
+                </div>
+            </div>
+      <div class="skill">
+                <h3 class="skill__type"><font color ="white"><b>Statistics</b></font></h3>
+                <div class="skill__outer-bar">
+                    <div class="skill__inner-bar skill__inner-bar--80"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 class="skill__type"><font color ="white"><b>Data Analytics</b></font></h3>
+                <div class="skill__outer-bar">
+                    <div class="skill__inner-bar skill__inner-bar--90"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 class="skill__type"><font color ="white"><b>Machine Learning</b></font></h3>
+                <div class="skill__outer-bar">
+                    <div class="skill__inner-bar skill__inner-bar--80"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 class="skill__type"><font color ="white"><b>Data Science</b></font></h3>
+                <div class="skill__outer-bar">
+                    <div class="skill__inner-bar skill__inner-bar--70"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3 class="skill__type"><font color ="white"><b>Microsoft SQL Server</b></font></h3>
+                <div class="skill__outer-bar">
+                    <div class="skill__inner-bar skill__inner-bar--60"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+}
+
+
+
+.u-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.skill {
+    margin: 1.3em 0;
+    position: relative;
+    width: 22.5em;
+}
+
+.skill__type {
+    color: #fff;
+    font-weight: 300;
+    font-size: .8em;
+    letter-spacing: .145em;
+    text-transform: uppercase;
+    width: 5em;
+}
+
+.skill__outer-bar, .skill__inner-bar {
+    height: 1.15em;
+}
+
+.skill__outer-bar {
+    margin-top: 1em;
+    background: #333;
+}
+
+.skill__inner-bar {
+    animation: fillBar 1s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+.skill__inner-bar--100 {
+    width: 70%;
+    background: #18A6F8;
+}
+.skill__inner-bar--100 {
+    width: 75%;
+    background: #18A6F8;
+}
+.skill__inner-bar--90 {
+    width: 70%;
+    background: #18A6F8;
+}
+.skill__inner-bar--80 {
+    width: 75%;
+    background: #18A6F8;
+}
+.skill__inner-bar--70 {
+    width: 80%;
+    background: #18A6F8;
+}
+.skill__inner-bar--60 {
+    width: 70%;
+    background: #18A6F8;
+}
+
+@keyframes fillBar {
+    to {
+        transform: scaleX(1);
+    }
+}
+</style>
+<!--
+ACADEMIC Projects FROM LAST YEAR
+-->
+<div class="container" id="Technologies">
+
+  <h2><font color='white' ><b>Projects</b></h2>
+</div >
+<br><br>
+<br><br>
+<br><br>
+
+<title>CodePen - #1527 - News Card</title>
+ 
+      <style>
+      @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
+.snip1527 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  float: left;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  margin: 30px 1%;
+  max-width: 400px;
+  min-width: 400px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.snip1527 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1527 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+.snip1527 figcaption {
+  padding: 15px 20px 26px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.snip1527 figcaption:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #700877;
+  content: '';
+  background: -moz-linear-gradient(90deg, red 0%, red 100%, red 100%);
+  background: -webkit-linear-gradient(90deg, blue 0%, blue 100%, blue 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.snip1527 .date {
+  background-color: #fff;
+  border-radius: 100%;
+  color: blue;
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 10px 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: -25px;
+}
+
+.snip1527 .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.snip1527 .date .month {
+  font-size: 11px;
+}
+
+.snip1527 h3,
+.snip1527 p {
+  margin: 0;
+  padding: 0;
+}
+
+.snip1527 h3 {
+  display: inline-block;
+  font-weight: 1700;
+  letter-spacing: -0.4px;
+  margin-bottom: 5px;
+}
+
+.snip1527 p {
+  font-size: 0.8em;
+  line-height: 2.6em;
+  margin-bottom: 0px;
+}
+
+.snip1527 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.snip1527:hover img,
+.snip1527.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Demo purposes only */
+
+body {
+  background-color: #212121;
+}
+    </style>
+
+  
+  
+  
+  
+</head>
+
+<body translate="no" >
+
+  <figure class="snip1527">
+  <div class="image"><img src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="400" alt="pr-sample23" /></div>
+  <figcaption>
+    <div class="date"><span class="day">28</span><span class="month">Apr</span></div>
+    <h3>Customer LifeTime Value Prediction using Regression</h3>
+    <p>
+
+      The motive of the project is to predict the Customer LifeTime Value of a Four Wheeler Insurance Company and it is implemented by satisfying all MLR Assumptions. All the basic Exploratory Data Analysis and Data preprocessing, end to end Data Science life cycle has been implemented in this project.
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/Customer-Life-Time-Value-Prediction-Flask-Deployment--Heroku"></a>
+</figure>
+
+<figure class="snip1527 hover">
+  <div class="image"><img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pr-sample24" /></div>
+  <figcaption>
+    <div class="date"><span class="day">17</span><span class="month">May</span></div>
+    <h3>Drug Review Sentiment Analysis using NLP</h3>
+    <p>
+
+      This Project is based on sentiment analysis of the drug whether the drug should be given for patients, it is advisable or not to the patients. This project is implemented using Natural Language processing using a bag of words model and other techniques like vectorization to analyze the drug reviews.
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/Drug-review-sentiment-Analysis--Flask-Deployment-Heroku"></a>
+</figure>
+<figure class="snip1527">
+  <div class="image"><img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pr-sample25" /></div>
+  <figcaption>
+    <div class="date"><span class="day">01</span><span class="month">Jun</span></div>
+    <h3>Automated Machine Learning for Classification</h3>
+    <p>
+
+      This project is designed as Automated Application for performing EDA for given Dataset to generate insights using Python, Streamlit. For executing all the operations customized function has been created and EDA about data, Tabulation Analysis, Distribution Analysis, Correlation Analysis and it has been extended to perform Advance Statistical Analysis with some Basic Feature Engineering.
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/Automated-ML-Application-for-EDA-Streamlit-Deployment--Heroku"></a>
+</figure>
+
+<figure class="snip1527">
+  <div class="image"><img src="https://images.unsplash.com/photo-1593974123009-e87a2188ae12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pr-sample25" /></div>
+  <figcaption>
+    <div class="date"><span class="day">01</span><span class="month">July</span></div>
+    <h3>Liver Cancer Prediction Classification Analysis</h3>
+    <p>
+
+      This project is to designed to predict the Liver Cancer Prediction using classification Technique to find the probability for the presence of cancer and here we have  faced many challenges like Imbalanced data, High Dispersion and finally solved it and created as web API using Flask
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/Liver-Cancer-Prediction-With-Flask-Deployment"></a>
+</figure>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<figure class="snip1527">
+  <div class="image"><img src="https://images.unsplash.com/photo-1470145318698-cb03732f5ddf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pr-sample25" /></div>
+  <figcaption>
+    <div class="date"><span class="day">01</span><span class="month">Aug</span></div>
+    <h3>Employee Attrition Rate Prediction using Regression</h3>
+    <p>
+
+      This project is designed to predict Employee Attrition Rate based on the Employee working hours, age, monthly income, Daily Rate, Total Work Experience, and distance from home. This project is developed with python and deployed as a web API with Flask in Heroku Cloud Platform
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/Employee-Attrition-Rate-Prediction-Flask--Deployment-Heroku"></a>
+</figure>
+
+<figure class="snip1527">
+  <div class="image"><img src="https://images.unsplash.com/photo-1579226905180-636b76d96082?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pr-sample25" /></div>
+  <figcaption>
+    <div class="date"><span class="day">01</span><span class="month">Aug</span></div>
+    <h3>Data Scientist Salary Prediction using Regression</h3>
+    <p>
+
+      The motive of the project is to predict the Data Scientist Salary and it is implemented by satisfying all Regression Assumptions and also implemented some NLP for some features. All the basic Exploratory Data Analysis and Data preprocessing, end to end Data Science life cycle has been implemented in this project.
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/Data_Scientist-Salary-Prediction--Streamlit-Deployment"></a>
+</figure>
+
+<figure class="snip1527">
+  <div class="image"><img src="https://images.unsplash.com/photo-1593341646782-e0b495cff86d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pr-sample25" /></div>
+  <figcaption>
+    <div class="date"><span class="day">01</span><span class="month">Aug</span></div>
+    <h3>IPL Score  Prediction using Regression</h3>
+    <p>
+
+      This Project is based on Sports Analytics, it is implemented to predict the cricket score of the team and deployed as a web API using Flask. For Better results, I have not included the result as accurate score instead of that my prediction will be in a range of prediction -10and prediction +10
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/IPL-Score-Prediction-with-Flask-Deployment-Heroku"></a>
+</figure>
+
+<figure class="snip1527">
+  <div class="image"><img src="https://images.unsplash.com/photo-1545873446-23f32ef0c99b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pr-sample25" /></div>
+  <figcaption>
+    <div class="date"><span class="day">01</span><span class="month">Aug</span></div>
+    <h3>Adult Income Analysis using Classification</h3>
+    <p>
+
+      This project is to designed to predict the Adult Income Analysis using classification Technique and here we have faced many challenges like Imbalanced data, High Dispersion and finally solved it and created as web API using Streamlit
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/Adult-Income-Analysis--Streamlit-Deployment"></a>
+</figure>
+
+<figure class="snip1527">
+  <div class="image"><img src="https://images.unsplash.com/photo-1490971588422-52f6262a237a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pr-sample25" /></div>
+  <figcaption>
+    <div class="date"><span class="day">01</span><span class="month">Aug</span></div>
+    <h3>Movie Genre Prediction using NLP</h3>
+    <p>
+
+      This project is designed to predict the genre of the movie to give a basic idea of the movie whether the is related to comedy, action, horror, or drama. The web application is developed using Natural Language Processing by implement Bag of words model and some vectorization techniques to predict the genre.
+    </p>
+  </figcaption>
+  <a href="https://github.com/DheerajKumar97/Movie-Genre-Prediction-Flask--Deployment"></a>
+</figure>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script>
+    /* Demo purposes only */
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
+  </script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;Artificial Intelligence Aspirant </h6>
+            <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DHEERAJ KUMAR K <i>Currently, I am looking for a full-time role in Data Science, Machine Learning or related field.It just a small try to showcase my web development skills and my passion towards technology if you want to <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HIRE ME</i>, kindly <I> CONNECT WITH ME</i> using below available social media or <I> CONTACT ME</i> by clicking <i>HIRE ME</i> button in my profile </p>
+          </div>
+         
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <center><p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">DHEERAJ KUMAR K</a>.</center>
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+</footer>
+
+</html>
